@@ -1,5 +1,6 @@
 <script lang="ts">
 	import "../app.css";
+	import { ModeWatcher } from "mode-watcher";
 	import AppSidebar from "@/components/app-sidebar.svelte";
 	import * as Breadcrumb from "@/components/ui/breadcrumb/index.js";
 	import { Separator } from "@/components/ui/separator/index.js";
@@ -7,6 +8,7 @@
 	let { children } = $props();
 </script>
 
+<ModeWatcher />
 <Sidebar.Provider>
 	<AppSidebar />
 	<Sidebar.Inset>
