@@ -33,9 +33,6 @@
 		</header>
 		<div class="flex flex-1 flex-col gap-4 p-4 pt-0">
 			{@render children()}
-			<div
-				class="bg-muted/50 min-h-[100vh] flex-1 rounded-xl md:min-h-min"
-			></div>
 		</div>
 	</Sidebar.Inset>
 </Sidebar.Provider>
